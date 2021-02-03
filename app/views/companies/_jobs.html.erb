@@ -1,0 +1,12 @@
+<ul class="list-unstyled">
+  <% jobs.each do |job| %>
+    <li class="media mb-3">
+      <img class="mr-2 rounded" src="<%= gravatar_url(job.company, { size: 50 }) %>" alt="">
+      <div class="media-body">
+        <div>
+          <p class="mb-0"><%= job.content %></p>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

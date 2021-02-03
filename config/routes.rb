@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get 'signup', to: 'companies#new'
   get 'login', to: 'companies#sign_in'
   resources :companies, only: [:index, :show, :new, :create]
+  
+  resources :jobs, only: [:create, :destroy]
 end
