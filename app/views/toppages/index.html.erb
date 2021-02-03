@@ -3,10 +3,10 @@
   <aside class="col-sm-4">
     <div class="card">
       <div class="card-header">
-        <h1 class="card-title"><%= current_user.name %></h1>
+        <%#<h1 class="card-title"><%= current_user.name %><%#</h1>%>
       </div>
       <div class="card-body">
-        <img class="rounded img-fluid" src="<%= gravatar_url(current_user, { size: 500 }) %>" alt="">
+        <%#<img class="rounded img-fluid" src="<%= gravatar_url(current_user, { size: 500 }) %><%#" alt="">%>
       </div>
     </div>
   </aside>
@@ -27,7 +27,7 @@
   </div>
   <div class="container py-4">
     <div class="text-center">
-      <%= link_to 'お仕事をご登録の企業様' %>
+      <%= link_to 'お仕事をご登録の企業様', new_company_path %>
     </div>
   </div>
   <div class="container py-4">
