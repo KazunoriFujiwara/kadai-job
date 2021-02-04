@@ -6,7 +6,13 @@
         <div>
           <p class="mb-0"><%= job.content %></p>
         </div>
+        <div>
+          <% if current_company == job.company %>
+            <%= link_to "Delete", job, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-sm' %>
+          <% end %>
+        </div>
       </div>
     </li>
   <% end %>
+  <%= paginate jobs %>
 </ul>
